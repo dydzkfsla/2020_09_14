@@ -3,25 +3,36 @@ using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace _2020_09_14
 {
 
-    class MyMath { 
-    
-        public int Add(int x, int y)
+    class MyMath {
+        public int x;
+        public int y;
+        
+        public MyMath()
+        {
+            Console.WriteLine("생성자 호출");
+
+        }
+
+
+        public int Add()
         {
             return x + y;
         }
 
-        public double add(double x, double y)
+        public double Add(double x, double y)
         {
             return x + y;
         }
 
-        public int Min(int x , int y)
+
+        public int Min()
         {
             return x - y;
         }
