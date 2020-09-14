@@ -27,6 +27,18 @@ namespace _2020_09_14
 
         }
 
+        public Cat(string _name)
+        {
+            name = _name;
+        }
+
+        public Cat(string _name, string _color)
+        {
+            name = _name;
+            color = _color;
+
+        }
+
         public void Sound()
         {
             Console.WriteLine($"{color}색 {name} 고양이가 야~~~옹");
@@ -63,6 +75,10 @@ namespace _2020_09_14
             cat2.color = "검은색";
             cat2.Sound();
             cat2.Scratch();
+
+            Cat cc = new Cat();
+            cc = new Cat("네로", "Black");
+
 
         }
     }

@@ -10,40 +10,6 @@ using System.Threading.Tasks;
 namespace _2020_09_14
 {
 
-    class MyMath {
-        public int x;
-        public int y;
-        
-        public MyMath()
-        {
-            Console.WriteLine("생성자 호출");
-
-        }
-
-
-        public int Add()
-        {
-            return x + y;
-        }
-
-        public double Add(double x, double y)
-        {
-            return x + y;
-        }
-
-
-        public int Min()
-        {
-            return x - y;
-        }
-
-        public static MyMath operator +(MyMath myMath)
-        {
-            return myMath;
-        }
-
-    }
-
 
     class Class1
     {
